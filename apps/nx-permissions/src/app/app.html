@@ -1,0 +1,12 @@
+<div *permissions="'ALLOW_X'">
+  <p>This content is visible because the user has the ALLOW_X permission.</p>
+</div>
+
+<div *permissions="'xALLOW_X'">
+  <p>
+    This content is hidden because the user does not have the ALLOW_Y
+    permission.
+  </p>
+</div>
+
+<router-outlet></router-outlet>
